@@ -20,6 +20,8 @@ namespace Interface2
             // Desuden overholder vi S i SOLID (Single Responsibility Principle), da CheckoutManager
             // nu får 2 forskellige Interfaces, implementeret i 2 klasser,
             // der kun har én funktionalitet.
+            // Interface segregation principle (I i SOLID) overholdes også,
+            // da vi har opdelt funktionaliteten i flere interfaces,
             CheckoutManager checkoutManager_Object2 = new CheckoutManager(mobilePayProcessor_Object, eMailService_Object);
 
             // Linjen herunder giver compilr fejl, da CheckoutManager's constructor kræver en IPaymentProcessor,

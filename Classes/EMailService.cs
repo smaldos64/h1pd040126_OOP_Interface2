@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Interface2.Classes
 {
+    // Single Responsibility Principle (S i SOLID) overholdes,    
+    // da denne klasse kun har én funktionalitet:
+    // at sende kvitteringer via E-mail.
     public class EMailService : INotifier
     {
         public void SendReceipt(string message)
